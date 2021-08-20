@@ -1,0 +1,113 @@
+/* Resetando o navegador */
+
+/* Estilizando as tags, antes de mais nada */
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(fontes/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(fontes/Poppins-Light.ttf);
+}
+
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+    background-color: #FAFAFA; 
+}
+
+h1, h2 {
+    font-family: "Poppins Bold";
+}
+
+body, p {
+    font-family: "Poppins Regular";
+}
+
+input[type=submit], input[type=button] {
+	background:#0080FF;
+	padding: 10px 20px;
+	border: none;
+	color: #FFF;
+	text-transform: uppercase;
+	border-radius: 20px;
+}
+
+input[type=text], input[type=date], select {
+    padding: 5px 0 5px 0;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+table {
+    background: #fff;
+    margin: 0 auto;
+    padding: 25px;
+    width: 100%;
+    box-shadow:10px 10px 50px grey;  
+}
+
+th {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "Poppins Bold";
+}
+
+/* Fazendo responsivo */
+
+@media (max-width: 790px) {
+    body {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    form, label, input, select, option {
+        width: 100%;
+        display: block;
+    }
+
+    td, th, tr{
+       display: block;
+    }
+
+    h1 {
+        line-height: 1;
+    }
+
+    table { border: 0; }
+
+table thead { display: none; }
+
+table tr {
+  border-bottom: 3px solid #ddd;
+  display: block;
+  margin-bottom: .625em;
+}
+
+table td {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  font-size: .8em;
+  text-align: right;
+}
+
+table td:before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table td:last-child { border-bottom: 0; }
+
+}
+}
+
